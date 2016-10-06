@@ -76,7 +76,7 @@
     XCTAssertEqualObjects(_testGuy.race, @"Human", @"race is wrong");
     XCTAssertEqualObjects(_testGuy.gender, @"Male", @"gener is wrong");
     XCTAssertEqualObjects(_testGuy.averageItemLevel, @379, @"avg item level is wrong");
-    XCTAssertEqualObjects(_testGuy.averageItemLevelEquipped, @355, @"avg item level is wrong");
+    XCTAssertEqualObjects(_testGuy.averageItemLevelEquipped, @351, @"avg item level is wrong");
 }
 
 // 2
