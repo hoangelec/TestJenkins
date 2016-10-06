@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "Character.h"
 #import "WoWUtils.h"
+#import "Item.h"
 @interface CharacterTests : XCTestCase
 
 @end
@@ -17,6 +18,7 @@
 {
     // 1
     NSDictionary *_characterDetailJson;
+    Character *_testGuy;
 }
 
 // 2
@@ -38,6 +40,8 @@
     
     
     _characterDetailJson = json;
+    
+    _testGuy = [[Character alloc] initWithCharacterDetailData:_characterDetailJson];
 }
 
 -(void)tearDown
